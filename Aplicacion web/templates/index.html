@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colegio San Miguel</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{{url_for('static', filename= 'bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'estilo.css')}}">
+  </head>
+  <body>
+    <div class="container my-3">
+    <h1 class="text-center fs-3">Colegio San Miguel</h1>
+    <!-- aqui el contenido que tenga que ir -->
+    {%block contenedor%}{%endblock%}
+    </div>
+    <footer class="fixed-bottom container d-flex justify-content-between">
+      <p>Telefono: 264-4282826</p>
+      <p>Direccion: Av.España Nte 815 - San Juan</p>
+    </footer>
+  </body>
+</html>
